@@ -16,6 +16,7 @@ body, html {
     justify-content: center;
     padding: 20px;
     padding-right: 300px;
+    align-items: center
 }
 
 .image-container img {
@@ -27,7 +28,10 @@ body, html {
     margin-left: 20px;
     flex: 1;
 }
-
+.citations {
+    padding-left: 200px;
+    padding-right: 200px;
+}
 /* Responsive Design */
 @media (max-width: 1000px) {
     .container {
