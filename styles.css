@@ -2,7 +2,6 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     color: #2157ca;
     font-family: "Reddit Mono", monospace;
   font-optical-sizing: auto;
@@ -16,7 +15,8 @@ body, html {
     justify-content: center;
     padding: 20px;
     padding-right: 300px;
-    align-items: center
+    align-items: center;
+    width: 700px;
 }
 
 .image-container img {
@@ -55,4 +55,8 @@ body, html {
 
 #hover-target {
     cursor: pointer;
+}
+
+img {
+    border-radius: 25%
 }
