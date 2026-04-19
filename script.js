@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
     let currentIndex = 0;
 
-    imageElement.addEventListener('mouseover', function () {
+    imageElement.addEventListener('click', function () {
         currentIndex = (currentIndex + 1) % images.length; // Cycle through images
         imageElement.src = images[currentIndex];
     });

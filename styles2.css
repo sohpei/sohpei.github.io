@@ -1,4 +1,8 @@
 /* Basic Styling */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -6,8 +10,10 @@ body, html {
     color: #2157ca;
     font-family: "Reddit Mono", monospace;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .description {
@@ -26,9 +32,10 @@ body, html {
   }
 
 .container {
-    width: 80%;
+  width: min(100%, 1200px);
     margin-left: auto;
     margin-right: auto;
+  padding: 0 16px 24px;
 }
 
   
@@ -43,6 +50,7 @@ body, html {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    height: auto;
   }
 
 
@@ -55,9 +63,7 @@ body, html {
     }
 
     .container {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
     }
   }
   
@@ -69,8 +75,8 @@ body, html {
     }
 
     .container {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
     }
   }

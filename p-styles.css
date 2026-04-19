@@ -1,11 +1,19 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   
   .container {
+    width: min(100%, 1200px);
+    margin: 0 auto;
     padding: 20px;
   }
   
@@ -40,10 +48,10 @@ body {
   }
   
   .modal-content {
-    margin: 10% auto;
+    margin: 8vh auto;
     padding: 20px;
     background-color: white;
-    width: 80%;
+    width: min(90%, 600px);
     max-width: 600px;
     border-radius: 8px;
   }
@@ -76,4 +84,20 @@ body {
   
   #modal-text {
     text-align: center;
+  }
+
+  @media screen and (max-width: 700px) {
+    .art-item {
+      width: 100%;
+    }
+
+    .container {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    .modal-content {
+      width: calc(100% - 24px);
+      padding: 16px;
+    }
   }
